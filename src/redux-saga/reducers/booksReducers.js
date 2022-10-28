@@ -17,7 +17,6 @@ const booksReducer = (state = INIT_STATE, action) => {
 };
 
 const getBooksSuccedd = (state, action) => {
-  console.info({ ...state });
   return { ...state, books: action.payload, loading: false };
 };
 export default booksReducer;

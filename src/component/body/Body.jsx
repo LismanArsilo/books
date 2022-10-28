@@ -13,7 +13,6 @@ export default function Body() {
   useEffect(() => {
     dispatch(GetBooksRequest(filter));
   }, [filter]);
-  console.info(books.items);
   const handleFilter = (value) => {
     setFilter(value);
   };
